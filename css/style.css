@@ -1,11 +1,11 @@
 body {
-  margin: 0;
   font: 14px 'Oxygen', sans-serif;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
 }
 a {
   color: #737373;
   cursor: pointer;
+  text-decoration: none;
 }
 .contact a, .contact p {
   margin: 0;
@@ -15,7 +15,7 @@ a {
   justify-content: flex-end;
   align-items: center;
   background-color: #f2f2f2;
-  padding-right: 10%;
+  padding: 0 8%;
 }
 #mail, .contact p {
   margin-right: 15px;
@@ -25,7 +25,6 @@ a {
 }
 a.social {
   display: inline-block;
-  text-decoration: none;
   color: #595959;
   background-color: #e6e6e6;
   padding: 7px 3px 3px;
@@ -38,16 +37,15 @@ a.social {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1.5em 10%
+  margin: 1.5em 8%
 }
 .main-menu li {
   display: inline-flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .main-menu li a {
-  display: block;
-  text-decoration: none;
-  margin: 0 0.6em;
+  margin: 0.6em;
 }
 .logo h1 {
   display: inline-flex;
@@ -55,7 +53,6 @@ a.social {
   font-size: 3em;
 }
 .logo-m {
-  display: block;
   font-weight: 900;
   font-family: 'Montserrat', sans-serif;
   background-color: #c285c7;
@@ -66,10 +63,9 @@ a.social {
 .breadcrumbs {
   background-color: #834488;
   line-height: 4em;
-  padding: 0 10%
+  padding: 0 8%
 }
-a.paragreytext {
-  text-decoration: none;
+.paragreytext {
   color: white;
 }
 .paraorangetext {
@@ -77,11 +73,88 @@ a.paragreytext {
 }
 .page-title {
   background-color: #c285c7;
-  padding: 3em 10%;
+  padding: 3em 8%;
   color: #f2d9f2;
   font: 0.8em 'Raleway', sans-serif;
 }
 .page-title h2 span {
   font-size: 2em;
   color: white;
+}
+.second-menu {
+  padding: 0.4em;
+  background-color: #f2f2f2;
+  margin: 1.5em 0;
+}
+.second-menu li {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.second-menu li a {
+  padding: 0.7em 1.2em;
+  background-color: #f2f2f2;
+}
+#all a {
+  background-color: #c285c7;
+  color: white;
+}
+.content-block {
+  margin: 0 8% 0 8%;
+}
+.content {
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.article {
+  color: #737373;
+  font-size: 0.9em;
+  font-weight: normal;
+  padding: 0;
+  margin: 0.1em 0 3em;
+  line-height: 1.5;
+}
+.article a {
+   color: #c285c7;
+   font-size: 1.5em;
+}
+.buy {
+  background-color: #ecc6ec;
+  color: #834488;
+  font-size: 1.5em;
+  padding: 1em 8%;
+  text-align: center;
+}
+button {
+  background-color: #834488;
+  border-radius: 5px;
+  border: 2px #834488;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 0.5em 1em;
+}
+button a {
+  color: white;
+}
+.find-us {
+  display: flex;
+  justify-content: space-between;
+  background-color: #c285c7;
+  padding: 0.5em 8%;
+  font: bold 2em 'Raleway', sans-serif;
+  color: white;
+}
+.find-us ul li {
+  display: inline-flex;
+}
+.find-us ul li a {
+  justify-content: flex-end;
+  background-color: #a455aa;
+  color: white;
+  padding: 12px 3px 3px;
+  text-align: center;
+  height: 28px;
+  width: 40px;
+  margin-right: 1px;
+  font-size: 0.6em;
 }
