@@ -107,11 +107,10 @@ a.social {
 }
 .content {
   display: inline-flex;
-  /*justify-content: space-between;*/
   flex-wrap: wrap;
-  margin-right: -40px/*---------------------------------------------------*/
+  margin-right: -40px
 }
-.article-block{ /*--------------------------------------------------------*/
+.article-block{
   margin-right: 40px;
 }
 .article {
@@ -127,10 +126,17 @@ a.social {
    font-size: 1.5em;
 }
 .buy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
   background-color: #ecc6ec;
   color: #834488;
   font-size: 1.5em;
-  padding: 0.7em 8%;
+  padding: 0 8%;
+}
+.buy p {
+  margin-top: 1.8em;
   text-align: center;
 }
 button {
@@ -140,7 +146,7 @@ button {
   font-size: 0.8em;
   font-weight: bold;
   padding: 0.7em 1.4em;
-  margin: 0 1em;
+  margin: 0 1em 1.8em;
 }
 button a {
   color: white;
@@ -184,20 +190,10 @@ footer {
   margin-right: -40px;
 }
 .t-footer div {
-  /*flex-grow: 1;*/
   max-width: 360px;
   min-width: 200px;
   margin-right: 10px;
 }
-/*.about {
-  flex-grow: 1;
-}
-.resent-tweet {
-  flex-grow: 1;
-}
-.art-tweet {
-  flex-grow: 1;
-}*/
 footer div a{
   color: #bfbfbf;
 }
@@ -234,15 +230,27 @@ footer div a{
 }
 .art-tweet {
   background-color: #333333;
-  padding: 1.5em 1.5em;
   margin-bottom: 2em;
 }
 .art-tweet p {
-  padding: 0;
+  padding: 1.5em 1.5em 0;
   margin: 0;
 }
 .date-tweet {
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow-y: hidden;
+  height: 3em;
+}
+.date-tweet i {
+  font-size: 7em;
+  margin-top: -0.12em;
+
+  color: #2d2d2d;
+}
+.date-tweet p {
+  padding: 1.5em 1.5em 0;
 }
 .resent-tweet>a i {
   font-size: 1.4em;
@@ -255,7 +263,6 @@ footer div a{
   padding: 0.6em 8%;
   background-color: #333333;
   box-shadow: inset 0 0 10px #121212;
-  /*border-top: 3px solid #2b2b2b;*/
 }
 .l-footer ul li {
   display: inline-flex;
