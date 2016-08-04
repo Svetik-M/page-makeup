@@ -11,17 +11,25 @@ ul {
   margin: 0;
   padding: 0;
 }
-.contact a, .contact p {
+.contact-block a, .contact-block p {
   margin: 0;
 }
 .contact {
+  background-color: #f2f2f2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.contact-block {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: #f2f2f2;
   padding: 0 8%;
+  max-width: 1180px;
+  min-width: 720px;
+  margin: 0 auto;
 }
-#mail, .contact p {
+#mail, .contact-block p {
   margin-right: 15px;
 }
 #mail {
@@ -35,20 +43,29 @@ a.social {
   text-align: center;
   height: 21px;
   width: 25px;
-  margin-right: 2px;
+  margin-left: 2px;
 }
 .menu {
+  width: 100%;
+}
+.menu-block {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1.5em 8%
+  padding: 3.7em 8% 1.5em;
+  max-width: 1180px;
+  min-width: 720px;
+  margin: 0 auto;
 }
 .main-menu li {
   display: inline-flex;
   flex-wrap: wrap;
 }
 .main-menu li a {
-  margin: 0.6em;
+  margin: 0.3em 0.6em;
+}
+.contact a:hover, .main-menu li a:hover {
+  color: #c285c7;
 }
 .logo h1 {
   display: inline-flex;
@@ -64,29 +81,48 @@ a.social {
   padding: 5px 10px;
   margin-right: 20px;
 }
-.breadcrumbs {
+.breadcrumbs-block {
+  width: 100%;
   background-color: #834488;
+}
+.breadcrumbs {
   line-height: 4em;
-  padding: 0 8%
+  padding: 0 8%;
+  max-width: 1180px;
+  min-width: 720px;
+  margin: 0 auto;
 }
 .paragreytext {
   color: white;
+}
+.paragreytext:hover {
+  color: #cccccc;
 }
 .paraorangetext {
   color: #f2d9f2;
 }
 .page-title {
+  width: 100%;
   background-color: #c285c7;
-  padding: 3em 8%;
   color: #f2d9f2;
   font: 0.8em 'Raleway', sans-serif;
 }
-.page-title h2 span {
+h2 {
+  padding: 3em 8%;
+  max-width: 1180px;
+  min-width: 720px;
+  margin: 0 auto;
+}
+h2 span {
   font-size: 2em;
   color: white;
 }
+.second-menu-block {
+  max-width: 1180px;
+  min-width: 720px;
+  margin: 0 auto;
+}
 .second-menu {
-  padding: 0.4em;
   background-color: #f2f2f2;
   margin: 1.5em 0;
 }
@@ -96,44 +132,64 @@ a.social {
 }
 .second-menu li a {
   padding: 0.7em 1.2em;
-  background-color: #f2f2f2;
+  margin: 0.4em;
+}
+.second-menu li a:hover {
+  background-color: #cccccc;
 }
 #all a {
   background-color: #c285c7;
   color: white;
 }
+.page-content {
+  margin: 0 8%;
+}
 .content-block {
-  margin: 0 8% 0 8%;
+  max-width: 1180px;
+  min-width: 720px;
+  margin: 0 auto;
 }
 .content {
-  display: inline-flex;
+  display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin-right: -40px
+  line-height: 1.7;
+  margin-right: -20px;
 }
-.article-block{
-  margin-right: 40px;
+.article-block {
+  margin-right: 20px;
+  min-width: 350px;
+  max-width: 350px;
 }
 .article {
   color: #737373;
   font-size: 0.9em;
   font-weight: normal;
   padding: 0;
-  margin: 0.1em 0 3em;
+  margin: 0 0 50px;
   line-height: 1.5;
 }
 .article a {
    color: #c285c7;
    font-size: 1.5em;
 }
+.article a:hover {
+  color: #834488;
+}
+.buy-block {
+  background-color: #ecc6ec;
+}
 .buy {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: baseline;
-  background-color: #ecc6ec;
   color: #834488;
   font-size: 1.5em;
   padding: 0 8%;
+  max-width: 1180px;
+  min-width: 720px;
+  margin: 0 auto;
 }
 .buy p {
   margin-top: 1.8em;
@@ -141,6 +197,7 @@ a.social {
 }
 button {
   background-color: #834488;
+  color: white;
   border-radius: 5px;
   border: 2px #834488;
   font-size: 0.8em;
@@ -148,17 +205,22 @@ button {
   padding: 0.7em 1.4em;
   margin: 0 1em 1.8em;
 }
-button a {
-  color: white;
+button:hover {
+  background-color: #a455aa;
+}
+.find-us-block {
+  background-color: #c285c7;
 }
 .find-us {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #c285c7;
   padding: 0.3em 8%;
   font: bold 2em 'Raleway', sans-serif;
   color: white;
+  max-width: 1180px;
+  min-width: 720px;
+  margin: 0 auto;
 }
 .find-us ul li {
   display: inline-flex;
@@ -174,30 +236,37 @@ button a {
   margin: -3px;
   font-size: 0.6em;
 }
-footer {
-  color: #999999;
-  font: 0.9em sans-serif;
+.find-us ul li a:last-child {
+  margin-right: 0;
 }
-.footer {
+.find-us ul li a:hover {
+  color: 	#cccccc;
+}
+.search-and-links-block {
   background-color: #444444;
-  padding: 0 8% 4em;
 }
-.t-footer {
+.search-and-links {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0 6.5% 4em;
+  color: #999999;
+  font: 0.9em sans-serif;
+  max-width: 1200px;
+  min-width: 743px;
+  margin: 0 auto;
+}
+.search-and-links > div {
   line-height: 1.7;
-  margin-right: -40px;
+  flex-basis: 22em;
+  flex-grow: 1;
+  margin: 0 2%;
+  min-width:
 }
-.t-footer div {
-  max-width: 360px;
-  min-width: 200px;
-  margin-right: 10px;
-}
-footer div a{
+.search-and-links div a, footer a {
   color: #bfbfbf;
 }
-.t-footer div h4 {
+.search-and-links div h4 {
   color: white;
   font: bold 1.5em 'Raleway', sans-serif;
 }
@@ -207,15 +276,15 @@ footer div a{
 .search {
   display: flex;
 }
-.search a, .search input{
+#search-img, .search input{
   border-radius: 3px;
 }
-.search a {
+#search-img {
   flex-grow: 1;
   color: white;
   background-color: #bfbfbf;
-  padding-top: 8px;
-  height: 30px;
+  padding-top: 10px;
+  height: 28px;
   width: 45px;
   margin-left: 6px;
   text-align: center;
@@ -250,21 +319,28 @@ footer div a{
   color: #2d2d2d;
 }
 .date-tweet p {
-  padding: 1.5em 1.5em 0;
+  padding: 0 1.5em 1.5em;
 }
 .resent-tweet>a i {
   font-size: 1.4em;
   margin-right: 3px;
 }
-.l-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.6em 8%;
+footer {
   background-color: #333333;
   box-shadow: inset 0 0 10px #121212;
 }
-.l-footer ul li {
+.footer-block {
+  color: #999999;
+  font: 0.8em sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 8%;
+  max-width: 1180px;
+  min-width: 720px;
+  margin: 0 auto;
+}
+footer ul li {
   display: inline-flex;
   margin-right: 1.2em;
 }
