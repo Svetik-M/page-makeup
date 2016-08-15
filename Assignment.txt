@@ -1,0 +1,7 @@
+Please create html+css page using template like "Assignment.png".
+1. Use http://placehold.it/ service for images
+2. Use  https://fortawesome.github.io/Font-Awesome/ for icons
+3. Select color scheme by your preferences
+4. Do not use any css frameworks, flex-box css is preferable solution.
+
+
