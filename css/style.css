@@ -2,39 +2,47 @@ body {
   font: 14px 'Oxygen', sans-serif;
   letter-spacing: 0.05em;
 }
+
 a {
   color: #737373;
   cursor: pointer;
   text-decoration: none;
 }
+
 ul {
   margin: 0;
   padding: 0;
 }
-.contact-block a, .contact-block p {
+
+.contact-block, .menu > div, .breadcrumbs > div, h2, nav, .content, .buy, .find-us, .footer-block {
+  max-width: 1180px;
+}
+
+address a, address p {
   margin: 0;
 }
+
 .contact {
   background-color: #f2f2f2;
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
+
 .contact-block {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
   align-items: center;
   padding: 0 8%;
-  max-width: 1180px;
-  min-width: 720px;
   margin: 0 auto;
 }
-#mail, .contact-block p {
+
+.email, .phone {
   margin-right: 15px;
 }
-#mail {
+
+.email {
   color: #c285c7;
 }
+
 a.social {
   display: inline-block;
   color: #595959;
@@ -45,34 +53,37 @@ a.social {
   width: 25px;
   margin-left: 2px;
 }
-.menu {
-  width: 100%;
-}
-.menu-block {
+
+.menu > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3.7em 8% 1.5em;
-  max-width: 1180px;
-  min-width: 720px;
+  padding: 1.5em 8%;
   margin: 0 auto;
 }
-.main-menu li {
+
+.main-menu ul {
   display: inline-flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
-.main-menu li a {
-  margin: 0.3em 0.6em;
+
+.main-menu ul li {
+  list-style-type: none;
+  margin: 0.6em;
 }
-.contact a:hover, .main-menu li a:hover {
+
+.contact a:hover, .main-menu ul li a:hover {
   color: #c285c7;
 }
+
 .logo h1 {
   display: inline-flex;
   flex-wrap: nowrap;
   font-size: 3em;
   margin-right: 1em;
 }
+
 .logo-m {
   font-weight: 900;
   font-family: 'Montserrat', sans-serif;
@@ -81,104 +92,120 @@ a.social {
   padding: 5px 10px;
   margin-right: 20px;
 }
-.breadcrumbs-block {
-  width: 100%;
+
+main {
+  padding: : 0 8%;
+}
+
+.breadcrumbs {
   background-color: #834488;
 }
-.breadcrumbs {
+
+.breadcrumbs > div {
   line-height: 4em;
   padding: 0 8%;
-  max-width: 1180px;
-  min-width: 720px;
   margin: 0 auto;
 }
+
 .paragreytext {
   color: white;
 }
+
 .paragreytext:hover {
   color: #cccccc;
 }
+
 .paraorangetext {
   color: #f2d9f2;
 }
+
 .page-title {
-  width: 100%;
   background-color: #c285c7;
   color: #f2d9f2;
   font: 0.8em 'Raleway', sans-serif;
 }
+
 h2 {
   padding: 3em 8%;
-  max-width: 1180px;
-  min-width: 720px;
   margin: 0 auto;
 }
+
 h2 span {
   font-size: 2em;
   color: white;
 }
-.second-menu-block {
-  max-width: 1180px;
-  min-width: 720px;
+
+.second-menu, .content {
+  padding: 0 8%;
   margin: 0 auto;
 }
-.second-menu {
+
+.second-menu ul {
   background-color: #f2f2f2;
   margin: 1.5em 0;
-}
-.second-menu li {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
 }
-.second-menu li a {
+
+.second-menu ul li {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.second-menu ul li a {
   padding: 0.7em 1.2em;
   margin: 0.4em;
 }
-.second-menu li a:hover {
+
+.second-menu ul li a:hover {
   background-color: #cccccc;
 }
+
 #all a {
   background-color: #c285c7;
   color: white;
 }
-.page-content {
-  margin: 0 8%;
-}
-.content-block {
-  max-width: 1180px;
-  min-width: 720px;
-  margin: 0 auto;
-}
-.content {
+
+.content > div {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   line-height: 1.7;
   margin-right: -20px;
 }
-.article-block {
-  margin-right: 20px;
+
+figure {
+  margin: 0 20px 0 0;
   min-width: 350px;
   max-width: 350px;
+  margin-bottom: 50px;
 }
-.article {
+
+figcaption {
   color: #737373;
   font-size: 0.9em;
   font-weight: normal;
   padding: 0;
-  margin: 0 0 50px;
   line-height: 1.5;
 }
-.article a {
-   color: #c285c7;
-   font-size: 1.5em;
+
+figcaption a {
+  color: #c285c7;
+  font-size: 1.5em;
 }
-.article a:hover {
+
+figcaption a:hover {
   color: #834488;
 }
+
+figcaption time {
+    display: block;
+}
+
 .buy-block {
   background-color: #ecc6ec;
 }
+
 .buy {
   display: flex;
   flex-wrap: wrap;
@@ -187,14 +214,14 @@ h2 span {
   color: #834488;
   font-size: 1.5em;
   padding: 0 8%;
-  max-width: 1180px;
-  min-width: 720px;
   margin: 0 auto;
 }
+
 .buy p {
   margin-top: 1.8em;
   text-align: center;
 }
+
 button {
   background-color: #834488;
   color: white;
@@ -205,26 +232,33 @@ button {
   padding: 0.7em 1.4em;
   margin: 0 1em 1.8em;
 }
+
 button:hover {
   background-color: #a455aa;
 }
+
 .find-us-block {
   background-color: #c285c7;
 }
+
 .find-us {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.3em 8%;
+  padding: 25px 8%;
   font: bold 2em 'Raleway', sans-serif;
   color: white;
-  max-width: 1180px;
-  min-width: 720px;
   margin: 0 auto;
 }
+
+.find-us p {
+  margin: 10px 25px 10px 0;
+}
+
 .find-us ul li {
   display: inline-flex;
 }
+
 .find-us ul li a {
   justify-content: flex-end;
   background-color: #a455aa;
@@ -236,15 +270,19 @@ button:hover {
   margin: -3px;
   font-size: 0.6em;
 }
+
 .find-us ul li a:last-child {
   margin-right: 0;
 }
+
 .find-us ul li a:hover {
-  color: 	#cccccc;
+  background-color: #834488;
 }
-.search-and-links-block {
+
+aside {
   background-color: #444444;
 }
+
 .search-and-links {
   display: flex;
   justify-content: space-between;
@@ -253,58 +291,76 @@ button:hover {
   color: #999999;
   font: 0.9em sans-serif;
   max-width: 1200px;
-  min-width: 743px;
   margin: 0 auto;
 }
+
 .search-and-links > div {
   line-height: 1.7;
   flex-basis: 22em;
   flex-grow: 1;
   margin: 0 2%;
-  min-width:
 }
+
 .search-and-links div a, footer a {
   color: #bfbfbf;
 }
-.search-and-links div h4 {
+
+.search-and-links div h3 {
   color: white;
   font: bold 1.5em 'Raleway', sans-serif;
 }
+
 .about p {
   margin-bottom: 4.2em;
 }
+
 .search {
   display: flex;
 }
-#search-img, .search input{
+
+.search button, .search input{
   border-radius: 3px;
 }
-#search-img {
-  flex-grow: 1;
-  color: white;
-  background-color: #bfbfbf;
-  padding-top: 10px;
-  height: 28px;
-  width: 45px;
-  margin-left: 6px;
-  text-align: center;
-  vertical-align: middle;
-}
+
 .search input {
+  color: #737373;
   flex-grow: 6;
   height: 38px;
   border: 0;
   padding: 0 8px;
   font-size: 1.5em;
 }
+
+.search button {
+  flex-grow: 1;
+  color: white;
+  background-color: #bfbfbf;
+  padding-top: 10px;
+  height: 38px;
+  width: 45px;
+  margin-left: 6px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.search button .fa-search {
+  font-size: 16px;
+}
+
+.search button:hover {
+  background-color: #989595
+}
+
 .art-tweet {
   background-color: #333333;
   margin-bottom: 2em;
 }
+
 .art-tweet p {
   padding: 1.5em 1.5em 0;
   margin: 0;
 }
+
 .date-tweet {
   display: flex;
   justify-content: space-between;
@@ -312,23 +368,27 @@ button:hover {
   overflow-y: hidden;
   height: 3em;
 }
+
 .date-tweet i {
   font-size: 7em;
   margin-top: -0.12em;
-
   color: #2d2d2d;
 }
+
 .date-tweet p {
   padding: 0 1.5em 1.5em;
 }
+
 .resent-tweet>a i {
   font-size: 1.4em;
   margin-right: 3px;
 }
+
 footer {
   background-color: #333333;
   box-shadow: inset 0 0 10px #121212;
 }
+
 .footer-block {
   color: #999999;
   font: 0.8em sans-serif;
@@ -336,11 +396,65 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 0.5em 8%;
-  max-width: 1180px;
-  min-width: 720px;
   margin: 0 auto;
 }
+
 footer ul li {
   display: inline-flex;
-  margin-right: 1.2em;
+  margin: 0.3em 1.2em 0.5em 0;
+}
+
+@media (min-device-width: 1290px){
+  .content > div::after {
+    content: '';
+    width: 350px;
+  }
+}
+
+@media (max-width: 860px) {
+  .menu > div {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .logo h1 {
+    margin-right: 0;
+  }
+  .main-menu {
+    margin: 0 -0.6em;
+  }
+  .second-menu ul li {
+    flex-grow: 1;
+  }
+  figure {
+    max-width: 100%;
+    min-width: 100%;
+    display: inline-flex;
+  }
+  figure img {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 580px) {
+  .contact-block {
+    justify-content: center;
+  }
+  .find-us {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .find-us p {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  figure img {
+    width: calc(100vw - 16vw - 150px);
+    height: calc((100vw - 16vw - 150px) / 2);
+  }
+  figcaption {
+    width: 130px;
+  }
+  .search-and-links > div {
+    flex-basis: 100%;
+  }
 }
